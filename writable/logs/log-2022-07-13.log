@@ -1,0 +1,42 @@
+CRITICAL - 2022-07-13 13:22:20 --> Class 'App\Models\GestorModel' not found
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+CRITICAL - 2022-07-13 13:24:45 --> Trying to access array offset on value of type bool
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 38, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-13 13:26:47 --> Call to undefined function App\Controllers\geradorDeSenha()
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Cadastro->novoCadastro()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+ERROR - 2022-07-13 13:27:18 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-07-13 13:30:33 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-07-13 13:30:40 --> Duplicate entry 'teste.com@com.com' for key 'email'
+CRITICAL - 2022-07-13 13:30:40 --> Duplicate entry 'teste.com@com.com' for key 'email'
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(67): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Cadastro.php(43): App\Models\UsuarioModel->novoUsuario('teste.com@com.c...', '_nGb1DHJrC4N635...', 'P')
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Cadastro->novoCadastro()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#14 {main}
+ERROR - 2022-07-13 13:30:50 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()

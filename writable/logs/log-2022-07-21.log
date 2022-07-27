@@ -1,0 +1,39 @@
+CRITICAL - 2022-07-21 12:42:02 --> Undefined property: App\Controllers\Ajax\Relatorios::$professorModel
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Ajax\Relatorios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\vinic\\...', 16, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Ajax\Relatorios->testeAjax('102')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Relatorios))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-21 12:42:10 --> Undefined property: App\Controllers\Ajax\Relatorios::$professorModel
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Ajax\Relatorios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\vinic\\...', 16, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Ajax\Relatorios->testeAjax('59')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Relatorios))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-21 12:42:14 --> Undefined property: App\Controllers\Ajax\Relatorios::$professorModel
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Ajax\Relatorios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\vinic\\...', 16, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Ajax\Relatorios->testeAjax('171')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Relatorios))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-21 12:42:46 --> Too few arguments to function App\Controllers\Ajax\Relatorios::testeAjax(), 0 passed in C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Ajax\Relatorios->testeAjax()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Relatorios))
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+CRITICAL - 2022-07-21 12:42:50 --> Undefined property: App\Controllers\Ajax\Relatorios::$professorModel
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Ajax\Relatorios.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\vinic\\...', 16, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Ajax\Relatorios->testeAjax('6')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Relatorios))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}

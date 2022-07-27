@@ -1,0 +1,402 @@
+ERROR - 2022-07-15 11:17:45 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 11:17:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:18:04 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 11:18:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:18:12 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 11:18:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:22:14 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 11:22:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:31:16 --> Error connecting to the database: Unknown database 'alunos_portal'
+CRITICAL - 2022-07-15 11:31:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'alunos_portal'
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:31:19 --> Error connecting to the database: Unknown database 'alunos_portal'
+CRITICAL - 2022-07-15 11:31:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'alunos_portal'
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 11:58:58 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+CRITICAL - 2022-07-15 11:58:58 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#13 {main}
+ERROR - 2022-07-15 12:02:08 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 12:02:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 12:02:42 --> Error connecting to the database: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+CRITICAL - 2022-07-15 12:02:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 12:02:54 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+CRITICAL - 2022-07-15 12:02:54 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#13 {main}
+ERROR - 2022-07-15 12:32:06 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+CRITICAL - 2022-07-15 12:32:06 --> Table 'alunos_portal.usuarios' doesn't exist in engine
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\UsuarioModel.php(54): CodeIgniter\BaseModel->first()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(42): App\Models\UsuarioModel->verificaTipoLogin('vinnyzika2.0@gm...', '123')
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#13 {main}
+ERROR - 2022-07-15 12:34:43 --> Table 'alunos_portal.gestores' doesn't exist in engine
+CRITICAL - 2022-07-15 12:34:43 --> Table 'alunos_portal.gestores' doesn't exist in engine
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\GestorModel.php(92): CodeIgniter\BaseModel->first()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): App\Models\GestorModel->getGestorById(NULL)
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#13 {main}
+ERROR - 2022-07-15 12:34:46 --> Table 'alunos_portal.gestores' doesn't exist in engine
+CRITICAL - 2022-07-15 12:34:46 --> Table 'alunos_portal.gestores' doesn't exist in engine
+#0 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\vinic\Documents\SN\portal_alunos\app\Models\GestorModel.php(92): CodeIgniter\BaseModel->first()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): App\Models\GestorModel->getGestorById(NULL)
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#9 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#13 {main}
+CRITICAL - 2022-07-15 12:35:09 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:35:15 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:36:46 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:37:53 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:38:06 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:40:35 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:41:04 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:41:17 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:41:58 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:42:58 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:42:59 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:43:20 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:43:35 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+ERROR - 2022-07-15 12:44:28 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-07-15 12:44:28 --> Undefined variable: nome
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Views\_common\layout_gestor.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 70, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout_...', Array, true)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Common.php(1089): CodeIgniter\View\View->render('novo_usuario/ge...', Array, true)
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Cadastro.php(59): view('novo_usuario/ge...', Array)
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Cadastro->novoCadastro()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 12:46:06 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-07-15 12:46:06 --> Undefined variable: nome
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Views\_common\layout_gestor.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 70, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout_...', Array, true)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\system\Common.php(1089): CodeIgniter\View\View->render('novo_usuario/ge...', Array, true)
+#5 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Cadastro.php(59): view('novo_usuario/ge...', Array)
+#6 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Cadastro->novoCadastro()
+#7 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#8 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+ERROR - 2022-07-15 12:47:57 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-07-15 12:51:52 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-07-15 12:56:07 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 57, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:57:48 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:57:49 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:57:52 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:57:57 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 12:58:07 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Login.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 57, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Login->login()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-07-15 13:04:42 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\SN\portal_alunos\app\Controllers\Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\Users\vinic\Documents\SN\portal_alunos\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\SN\portal_alunos\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\SN\portal_alunos\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
