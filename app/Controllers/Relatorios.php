@@ -29,15 +29,16 @@ class Relatorios extends BaseController
     {
         switch ($this->session->tipo) {
             case 'A':
-                return view('relatorios/gestor', ['nome' => $this->alunoModel->getAlunoById($this->session->id)['nome'],
+                return view('relatorios/aluno', ['nome' => $this->alunoModel->getAlunoById($this->session->id)['nome'],
                 'professores' => $this->professorModel->getAllProfessores(),
-                'disciplinas' => $this->disciplinaModel->getAllDisciplinas()]);
+                'disciplinas' => $this->disciplinaModel->disciplinasAluno($this->session->id)]);
                 break;
 
             case 'P':
-                return view('relatorios/gestor', ['nome' => $this->professorModel->getProfessorById($this->session->id)['nome'],
+                return view('relatorios/professor', ['nome' => $this->professorModel->getProfessorById($this->session->id)['nome'],
                 'professores' => $this->professorModel->getAllProfessores(),
-                'disciplinas' => $this->disciplinaModel->getAllDisciplinas()]);
+                'disciplinas' => $this->disciplinaModel->getDisciplinasByProfessor($this->session->id),
+                'myId'=>$this->session->id]);
                 break;
 
             case 'G':

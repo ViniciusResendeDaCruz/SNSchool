@@ -8,10 +8,10 @@
 		<ul class="nav nav-tabs text-center card-header" role="tablist">
 			<li class="nav-item" role="presentation">
 				<a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">
-					Disciplinas <span class="badge bg-primary"><?php echo $countLivres ?></span>
+					Disciplinas <span id="countLivres" class="badge bg-primary"><?php echo $countLivres ?></span>
 				</a>
 			</li>
-			<li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Minhas Disciplinas<span class="badge bg-primary"><?php echo $countAll - 1 ?></span></a></li>
+			<li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Minhas Disciplinas<span id="countAll" class="badge bg-primary"><?php echo $countAll - 1 ?></span></a></li>
 		</ul>
 
 		<div class="tab-content card-body">
@@ -127,7 +127,19 @@
 			url: baseUrl + "/ajax/disciplinas/disciplinasAluno/livres",
 			dataType: "html",
 			success: function(response) {
-				$("#tab-1").html(response);
+				$("#tab-1").html(response)
+
+				let datatable = $("#livres").DataTable({
+					responsive: true
+				})
+
+				datatable.on('draw', function() {
+					let elements = document.getElementsByClassName("tooltipDesc")
+
+					for (const element of elements) {
+						let tooltip = new bootstrap.Tooltip(element)
+					}
+				})
 			}
 		});
 		$.ajax({
@@ -136,17 +148,41 @@
 			dataType: "html",
 			success: function(response) {
 				$("#tab-2").html(response);
-				$(".myTable").dataTable({responsive:true})
+				let datatable2 = $("#atribuidos").DataTable({
+					responsive: true
+				})
+
+
+
+				datatable2.on('draw', function() {
+					let elements = document.getElementsByClassName("tooltipDesc")
+
+					for (const element of elements) {
+						let tooltip = new bootstrap.Tooltip(element)
+					}
+				})
+
+
+				let elements = document.getElementsByClassName("tooltipDesc")
+
+				for (const element of elements) {
+					let tooltip = new bootstrap.Tooltip(element)
+				}
 			}
 		});
 	}
 
-	function matricularBtn(codigo){
+	function matricularBtn(codigo) {
 		$.ajax({
 			method: 'post',
-			url: baseUrl + "/ajax/disciplinas/atribuiAluno/"+codigo,
+			url: baseUrl + "/ajax/disciplinas/atribuiAluno/" + codigo,
 			success: function(response) {
 				initTables()
+				
+				let livres = parseInt($("#countLivres").html())
+				let all = parseInt($("#countAll").html())
+				$("#countLivres").html(livres-1)
+				$("#countAll").html(all+1)
 			}
 		});
 	}
@@ -154,9 +190,13 @@
 	function desmatricularBtn(codigo) {
 		$.ajax({
 			method: 'post',
-			url: baseUrl + "/ajax/disciplinas/desatribuiAluno/"+codigo,
+			url: baseUrl + "/ajax/disciplinas/desatribuiAluno/" + codigo,
 			success: function(response) {
 				initTables()
+				let livres = parseInt($("#countLivres").html())
+				let all = parseInt($("#countAll").html())
+				$("#countLivres").html(livres+1)
+				$("#countAll").html(all-1)
 			}
 		});
 	}

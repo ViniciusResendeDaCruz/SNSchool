@@ -95,6 +95,7 @@ class AlunoInscritoDisciplinaModel extends Model
         join('professores','disciplinas.professor_id=professores.matricula')->
         join('usuarios','alunos.login_id=usuarios.id')->
         where('professores.matricula',$matricula)->
+        groupBy('alunos.nome')->
         get()->
         getResultArray();
     }

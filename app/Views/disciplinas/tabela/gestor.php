@@ -14,7 +14,7 @@
 			<tr>
 				<td><?php echo $disciplina['codigo'] ?></td>
 				<td><?php echo $disciplina['nome'] ?></td>
-				<td><?php echo strlen($disciplina['descricao']) > 50 ? substr($disciplina['descricao'], 0, 50) . "..." : $disciplina['descricao']; ?></td>
+				<td><p class="tooltipDesc" data-bs-toogle="tooltip" data-bs-placement="right" title="<?php echo $disciplina['descricao'] ?>"><?php echo strlen($disciplina['descricao']) > 50 ? substr($disciplina['descricao'], 0, 50) . "..." : $disciplina['descricao']; ?></p></td>
 				<td><?php echo is_null($disciplina['profNome']) ? 'Nenhum professor' : $disciplina['profNome'] ?></td>
 				<td><button class="btn btn-outline-dark" id="botaoDisciplina" onclick="<?php echo 'alterarBtn(' . $disciplina['codigo'] . ')' ?>"> Alterar</button></td>
 			</tr>

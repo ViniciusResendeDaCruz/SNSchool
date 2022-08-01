@@ -9,7 +9,7 @@
 				<th>Nome</th>
 				<th>Data de Nascimento</th>
 				<th>Email</th>
-				<th>Disciplina</th>
+				<!-- <th>Disciplina</th> -->
 			</tr>
 		</thead>
 
@@ -20,7 +20,7 @@
 					<td><?php echo $aluno['nome'] ?></td>
 					<td><?php echo $aluno['data_nascimento'] ?></td>
 					<td><?php echo $aluno['email'] ?></td>
-					<td><?php echo $aluno['discNome'] ?></td>
+					<!-- <td><?php //echo $aluno['discNome'] ?></td> -->
 				</tr>
 			<?php endforeach ?>
 		</tbody>

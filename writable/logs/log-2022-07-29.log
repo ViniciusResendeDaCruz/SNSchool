@@ -1,0 +1,24 @@
+CRITICAL - 2022-07-29 11:50:16 --> Too few arguments to function App\Controllers\Ajax\Disciplinas::alteraDisciplina(), 2 passed in C:\wamp64\www\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\wamp64\www\system\CodeIgniter.php(832): App\Controllers\Ajax\Disciplinas->alteraDisciplina('33', 'hendrerit conse...')
+#1 C:\wamp64\www\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Disciplinas))
+#2 C:\wamp64\www\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-29 11:50:54 --> Too few arguments to function App\Controllers\Ajax\Disciplinas::alteraDisciplina(), 2 passed in C:\wamp64\www\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\wamp64\www\system\CodeIgniter.php(832): App\Controllers\Ajax\Disciplinas->alteraDisciplina('29', 'gravida. Praese...')
+#1 C:\wamp64\www\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Disciplinas))
+#2 C:\wamp64\www\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-29 11:52:03 --> Too few arguments to function App\Controllers\Ajax\Disciplinas::alteraDisciplina(), 2 passed in C:\wamp64\www\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\wamp64\www\system\CodeIgniter.php(832): App\Controllers\Ajax\Disciplinas->alteraDisciplina('7', 'ICLorem ipsum d...')
+#1 C:\wamp64\www\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Disciplinas))
+#2 C:\wamp64\www\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-29 11:52:39 --> Too few arguments to function App\Controllers\Ajax\Disciplinas::alteraDisciplina(), 2 passed in C:\wamp64\www\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\wamp64\www\system\CodeIgniter.php(832): App\Controllers\Ajax\Disciplinas->alteraDisciplina('7', 'ICLorem ipsum d...')
+#1 C:\wamp64\www\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Disciplinas))
+#2 C:\wamp64\www\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

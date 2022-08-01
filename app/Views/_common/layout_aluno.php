@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
-	<link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -208,63 +208,69 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 gradient-custom">
+
+        <nav class="offcanvas offcanvas start navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 gradient-custom" tabindex="-1" id="offcanvaslateral">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="<?php echo base_url('dashboard') ?>">
                     <div class="sidebar-brand-icon rotate-n-15"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-building fs-4" style="transform: translate(0px) rotate(15deg) scale(1.58) skew(0deg);transform-origin: center;">
                             <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"></path>
                             <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"></path>
                         </svg></div>
-                    <div class="sidebar-brand-text mx-3"><span>Sn School</span></div>
+                    <div class="offcanvas-header sidebar-brand-text mx-3"><span>Sn School</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar">
+                <ul class="navbar-nav text-light offcanvas-body" id="accordionSidebar">
 
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url('dashboard') ?>"><i class="far fa-clipboard" style="font-size: 20px;"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url('perfil') ?>"><i class="fas fa-user" style="font-size: 20px;"></i><span>Meu Perfil</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url('disciplinas') ?>"><i class="fas fa-table" style="font-size: 20px;"></i><span>Disciplinas</span></a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="<?php //echo base_url('relatorios') ?>"><i class="bi bi-paperclip" style="font-size: 20px;"></i><span>Relatórios</span></a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('relatorios') ?>"><i class="bi bi-paperclip" style="font-size: 20px;"></i><span>Relatórios</span></a></li>
                     <!-- <li class="nav-item"></li> -->
                     <!-- <li class="nav-item"></li> -->
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
             </div>
         </nav>
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <ul class="navbar-nav flex-nowrap ms-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
-                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
-                                    <form class="me-auto navbar-search w-100">
-                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
-                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </li>
-
-                            <div class="d-none d-sm-block topbar-divider"></div>
-                            <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $nome ?></span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="<?php echo base_url('Perfil') ?>"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" href="<?php echo base_url('disciplinas')?>"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Disciplinas</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url('dashboard/deslog') ?>"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                <nav class="sticky-top navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <!-- <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button> -->
+                    <button class="btn btn-outline-primary m-3 text-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslateral" aria-controls="offcanvaslateral"><i class="fas fa-bars"></i></button>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="me-auto navbar-search w-100">
+                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <?php $this->renderSection('content') ?>
-            </div>
+                                </form>
+                            </div>
+                        </li>
 
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $nome ?></span><img class="border rounded-circle img-profile" src="<?php echo base_url('assets/img/avatars/avatar1.jpeg') ?>"></a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                                    <a class="dropdown-item" href="<?php echo base_url('Perfil') ?>"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('disciplinas') ?>"><i class="fas fa-table fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Disciplinas</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('Relatorios') ?>"><i class="bi bi-paperclip fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Relatórios</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url('dashboard/deslog') ?>"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            </nav>
+            <?php $this->renderSection('content') ?>
+        </div>
+
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright ©Grupo SN 2022 - Feito por <a href="#">Vinicius Resende</a></span></div>
+        </div>
+    </footer>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="<?php //echo base_url('assets/js/theme.js') 
                         ?>"></script> -->

@@ -152,7 +152,8 @@ class DisciplinaModel extends Model
     //     return $this->select('professores.nome,disciplinas.codigo,disciplinas.nome,disciplinas.descricao,disciplinas.professor_id')->whereNotIn('codigo',$codigo_disciplinas_aluno)->orderBy('nome','asc')->get()->getResultArray();
     // }
 
-    // SELECT disciplinas.nome from disciplinas
+    // SELECT disciplinas.nome, professores.nome from disciplinas
+    //JOIN professores on professor_id = professores.matricula
     // where disciplinas.codigo not in(
     //     SELECT disciplinas.codigo FROM `aluno_inscrito_disciplinas`
     //      JOIN disciplinas ON disciplina_id = disciplinas.codigo
@@ -163,7 +164,7 @@ class DisciplinaModel extends Model
     {
         $subQuery = $this->db->table('aluno_inscrito_disciplinas')->select('disciplinas.codigo')->join('disciplinas','disciplina_id = disciplinas.codigo')->where('aluno_id',$matriculaAluno);
     //    dd($subQuery);
-        return $this->whereNotIn('codigo',$subQuery)->get()->getResultArray();
+        return $this->select('disciplinas.*,professores.nome as profNome')->join('professores','professor_id = professores.matricula','left')->whereNotIn('codigo',$subQuery)->get()->getResultArray();
     }
 
     public function disciplinasLivresPage($codigo_disciplinas_aluno,$page_number,$page_name)
@@ -192,7 +193,7 @@ class DisciplinaModel extends Model
     {
         $subQuery = $this->db->table('aluno_inscrito_disciplinas')->select('disciplinas.codigo')->join('disciplinas','disciplina_id = disciplinas.codigo')->where('aluno_id',$matriculaAluno);
     //    dd($subQuery);
-        return $this->whereIn('codigo',$subQuery)->get()->getResultArray();
+        return $this->select('disciplinas.*,professores.nome as profNome')->join('professores','professor_id = professores.matricula','left')->whereIn('codigo',$subQuery)->get()->getResultArray();
     }
 
 

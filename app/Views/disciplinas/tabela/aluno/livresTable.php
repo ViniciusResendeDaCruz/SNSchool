@@ -1,9 +1,10 @@
-<table id="myTable" class="myTable stripe display dt-responsive nowrap" style="width: 100%;">
+<table id="livres" class="myTable stripe display dt-responsive nowrap" style="width: 100%;">
 	<thead>
 		<tr>
 			<th>Código</th>
 			<th>Nome</th>
 			<th>Descrição</th>
+			<th>Professor</th>
 			<th></th>
 		</tr>
 	</thead>
@@ -13,7 +14,8 @@
 			<tr>
 				<td><?php echo $disciplina['codigo'] ?></td>
 				<td><?php echo $disciplina['nome'] ?></td>
-				<td><?php echo strlen($disciplina['descricao']) > 50 ? substr($disciplina['descricao'],0,50)."..." : $disciplina['descricao']; ?></td>
+				<td><p class="tooltipDesc" data-bs-toogle="tooltip" data-bs-placement="right" title="<?php echo $disciplina['descricao'] ?>"><?php echo strlen($disciplina['descricao']) > 50 ? substr($disciplina['descricao'],0,50)."..." : $disciplina['descricao']; ?></p></td>
+				<td class="<?php echo $disciplina['profNome']?'':'text-danger' ?>"><?php echo $disciplina['profNome'] ? $disciplina['profNome']:'Nenhum Professor'?></td>
 				<td><button class="btn btn-outline-dark" id="botaoDisciplina" onclick="<?php echo 'matricularBtn('.$disciplina['codigo'].')' ?>"> Matricular</button></td>
 			</tr>
 		<?php endforeach ?>

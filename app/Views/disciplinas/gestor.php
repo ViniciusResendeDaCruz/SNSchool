@@ -38,9 +38,9 @@
 	</div>
 </div>
 <!-- content------------------------------------------------------------------------ -->
-<div class="container card">
+<div class=" card" style="margin: 0 10vw;">
 
-	<div class="row card-header mt-3">
+	<div class=" card-header pt-3">
 		<div class="col-6">
 			<!-- <div class="col-md-6"> -->
 			<?php //echo form_open('disciplinas/novaDisciplina') ?>
@@ -69,6 +69,8 @@
 	// var baseUrl = "<?php //echo base_url() 
 						?>"
 
+						
+
 	function tableInit() {
 		$.ajax({
 			url: baseUrl + "/ajax/disciplinas/disciplinasGestor",
@@ -76,7 +78,20 @@
 			dataType: 'html',
 			success: function(msg) {
 				// console.log(msg);
-				$("#tabelaDisciplinas").html(msg)
+				let datatable = $("#tabelaDisciplinas").html(msg)
+				datatable.on('draw', function() {
+						let elements = document.getElementsByClassName("tooltipDesc")
+
+						for (const element of elements) {
+							let tooltip = new bootstrap.Tooltip(element)
+						}
+				})
+				let elements = document.getElementsByClassName("tooltipDesc")
+
+				for (const element of elements) {
+					let tooltip = new bootstrap.Tooltip(element)
+				}
+				
 			},
 			error: function(e) {
 				console.log(e);
@@ -116,9 +131,10 @@
 	}
 
 	function salvarAlteracao(codigo) {
-		console.log(codigo);
+		// console.log(codigo);
 		nome = $("#nome").val()
-		descricao = $("#descricao").text()
+		descricao = $("#descricao").val()
+		// console.log(descricao);
 
 		$.ajax({
 			url: baseUrl + `/ajax/disciplinas/alteraDisciplina/${codigo}/${nome}/${descricao}`,
@@ -135,7 +151,7 @@
 			error: function (e) {
 				myModal.hide();
 				$("#header").text('Erro')
-				$(".toast-body").addClass('alert-error').removeClass('alert-success').text("Algo deu errado")
+				$(".toast-body").addClass('alert-danger').removeClass('alert-success').text("Algo deu errado")
 				toast.show()
 			}
 		})
@@ -160,6 +176,8 @@
 				$("#header").text('Sucesso')
 				$(".toast-body").addClass('alert-success').removeClass('alert-danger').text("Disciplina inserida com sucesso")
 				toast.show();
+				$("#novoNome").val('');
+				$("#novaDescricao").val('');
 			}
 		});
 	}
@@ -180,7 +198,7 @@
 			error: function (e) {
 				myModal.hide();
 				$("#header").text('Erro')
-				$(".toast-body").addClass('alert-danger').removeClass('alert-success').text("Algo deu errado")
+				$(".toast-body").removeClass('alert-success').addClass('alert-danger').text("Algo deu errado")
 				toast.show()
 			}
 		})

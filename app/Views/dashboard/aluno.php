@@ -90,7 +90,7 @@
 	}
 </style>
 <div>
-	<h2 class="p-3 text-center">O que você deseja fazer hoje professor?</h2>
+	<h2 class="p-3 text-center">O que você deseja fazer hoje aluno?</h2>
 
 	<div class="container dash">
 		<div class="row">

@@ -85,6 +85,7 @@
 					<tr>
 						<th>Código</th>
 						<th>Nome</th>
+						<th>Descrição</th>
 						<th>Professor</th>
 
 					</tr>
@@ -95,6 +96,9 @@
 						<tr>
 							<td><?php echo $disciplina['codigo'] ?></td>
 							<td><?php echo $disciplina['nome'] ?></td>
+							<td>
+								<p class="tooltipDesc" data-bs-toogle="tooltip" data-bs-placement="right" title="<?php echo $disciplina['descricao'] ?>"><?php echo strlen($disciplina['descricao']) > 50 ? substr($disciplina['descricao'], 0, 50) . "..." : $disciplina['descricao']; ?></p>
+							</td>
 							<td><?php echo $disciplina['profNome'] ? $disciplina['profNome'] : '-' ?></td>
 
 						</tr>
@@ -115,7 +119,19 @@
 	$(document).ready(function() {
 		$('#mytable').DataTable();
 		$('#mytable2').DataTable();
-		$('#mytable3').DataTable();
+		let datatable = $('#mytable3').DataTable();
+		datatable.on('draw', function() {
+			let elements = document.getElementsByClassName("tooltipDesc")
+
+			for (const element of elements) {
+				let tooltip = new bootstrap.Tooltip(element)
+			}
+		})
+		let elements = document.getElementsByClassName("tooltipDesc")
+
+		for (const element of elements) {
+			let tooltip = new bootstrap.Tooltip(element)
+		}
 
 		$("#alunos").addClass('active show')
 	});

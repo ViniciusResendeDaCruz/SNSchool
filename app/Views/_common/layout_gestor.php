@@ -10,7 +10,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.js"></script>
 
 	<link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -19,9 +19,9 @@
 
 	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
-	<link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/r-2.3.0/datatables.min.css" />
-	
+
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -250,8 +250,8 @@
 
 <body id="page-top">
 	<div id="wrapper">
-		<nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 gradient-custom">
-			<div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+		<nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 gradient-custom sticky-top">
+			<div class="container-fluid d-flex flex-column p-0 sticky-top"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
 					<div class="sidebar-brand-icon rotate-n-15"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-building fs-4" style="transform: translate(0px) rotate(15deg) scale(1.58) skew(0deg);transform-origin: center;">
 							<path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"></path>
 							<path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"></path>
@@ -278,8 +278,8 @@
 		<div class="d-flex flex-column" id="content-wrapper">
 			<div id="content">
 				<nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-					<div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-						<ul class="navbar-nav flex-nowrap ms-auto">
+					<div class="container-fluid sticky-top"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+						<ul class="navbar-nav flex-nowrap ms-auto sticky-top">
 							<li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
 								<div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
 									<form class="me-auto navbar-search w-100">
@@ -293,8 +293,15 @@
 							<div class="d-none d-sm-block topbar-divider"></div>
 							<li class="nav-item dropdown no-arrow">
 								<div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $nome ?></span><img class="border rounded-circle img-profile" src=" <?php echo base_url('assets/img/avatars/avatar1.jpeg') ?> "></a>
-									<div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="<?php echo base_url('Perfil') ?>"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" href="<?php echo base_url('disciplinas')?>"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Disciplinas</a>
-										<div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url('dashboard/deslog') ?>"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+									<div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+										<a class="dropdown-item" href="<?php echo base_url('Perfil') ?>"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Perfil</a>
+										<a class="dropdown-item" href="<?php echo base_url('disciplinas') ?>"><i class="fas fa-table fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Disciplinas</a>
+										<a class="dropdown-item" href="<?php echo base_url('Cadastro') ?>"><i class="far fa-clipboard fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Novo Usuário</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="<?php echo base_url('Dados') ?>"><i class="bi bi-pie-chart fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Dados</a>
+										<a class="dropdown-item" href="<?php echo base_url('Relatorios') ?>"><i class="bi bi-paperclip fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Relatórios</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="<?php echo base_url('dashboard/deslog') ?>"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
 									</div>
 								</div>
 							</li>
@@ -308,7 +315,7 @@
 			</div>
 			<footer class="bg-white sticky-footer">
 				<div class="container my-auto">
-					<div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
+					<div class="text-center my-auto copyright"><span>Copyright ©Grupo SN 2022 - Feito por <a href="#">Vinicius Resende</a></span></div>
 				</div>
 			</footer>
 		</div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
@@ -320,6 +327,10 @@
 	<!-- <script src="<?php //echo base_url('assets/js/script.min.js') 
 						?>"></script> -->
 	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
 		var baseUrl = "<?php echo base_url() ?>"
 	</script>
 </body>

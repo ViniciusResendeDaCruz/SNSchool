@@ -10,7 +10,7 @@
 	}
 </style>
 
-<div class="container">
+<div class="container" style="height: 90vh;">
 	<div class="card">
 		<h2 class="card-header">Relatórios</h2>
 
@@ -95,11 +95,24 @@
 			method: "post",
 			dataType: "html",
 			success: function(msg) {
+				// console.log('tabela iniciada');
 				$('#tabelaDisciplinaProfessor').html(msg)
-				return $('#disciplinasTable').DataTable({
+				let datatable = $('#disciplinasTable').DataTable({
 					responsive: true
 				})
-				// console.log('tabela iniciada');
+				datatable.on('draw', function() {
+					let elements = document.getElementsByClassName("tooltipDesc")
+
+					for (const element of elements) {
+						let tooltip = new bootstrap.Tooltip(element)
+					}
+				})
+
+				let elements = document.getElementsByClassName("tooltipDesc")
+
+				for (const element of elements) {
+					let tooltip = new bootstrap.Tooltip(element)
+				}
 			}
 
 		})
@@ -168,7 +181,7 @@
 			// })
 
 		})
-		console.log('primeiro ajax');
+		// console.log('primeiro ajax');
 		$('#alunosDisciplinaSelect').change(function() {
 			initAlunosTable()
 
